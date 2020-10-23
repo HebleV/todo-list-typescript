@@ -1,3 +1,5 @@
+import { Action } from "./actions";
+
 export interface NoteState {
     notes: string[]
 } 
@@ -5,8 +7,6 @@ export interface NoteState {
 const intialState = {
     notes: []
 }
-
-type Action = {type : "ADD_NOTE", payload: string}
 
 export const noteReducer = (state: NoteState = intialState,action: Action) => {
     switch(action.type) {

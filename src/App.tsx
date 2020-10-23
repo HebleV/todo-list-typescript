@@ -16,9 +16,8 @@ function App() {
   return (
     <ThemeProvider>
       <CSSReset />
-      <h1>Hiii</h1>
       <NewTask addNote={onAddNote} />
-      <ul>
+      <ul style={{margin:'7%'}}>
         {notes.map((note) => {
           return <li key={note}>{note}</li>
         })}
