@@ -1,10 +1,14 @@
 import React from 'react';
+import { ThemeProvider, CSSReset } from '@chakra-ui/core'
+import NewTask from './components/NewTask';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <ThemeProvider>
+      <CSSReset />
+      <h1>Hiii</h1>
+      <NewTask addNote={alert} />
+    </ThemeProvider>
   );
 }
 
